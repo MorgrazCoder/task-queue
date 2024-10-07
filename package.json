@@ -12,6 +12,7 @@
     "start:dev": "nest start --watch",
     "start:debug": "nest start --debug --watch",
     "start:prod": "node dist/main",
+    "application:deploy": "npm ci && npm run prisma:apply-migrations && npm run prisma:apply-seeds",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "prisma:apply-seeds": "npx prisma db seed",
     "prisma:apply-migrations": "npx prisma migrate deploy"

@@ -1,11 +1,9 @@
 Инструкция по запуску:
 
 1. Создать .env файл и скопировать содержимое из .env.example(можно менять переменные)
-2. npm ci
-3. docker-compose up -d
-4. npm run prisma:apply-migrations
-5. npm run prisma:apply-seeds
-6. npm run start
+2. docker-compose up -d
+3. npm run application:deploy
+4. npm run start
 
 Как использовать:
 
