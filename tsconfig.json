@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "incremental": true,
+    "target": "ES2022",
+    "lib": ["ES2022"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "Node16",
+    "rootDir": "./",
+    "moduleResolution": "Node16",
+    "baseUrl": "./",
+    "paths": {
+      "@package.json": ["./package.json"],
+
+      "@domain": ["./src/domain/index"],
+      "@domain/*": ["./src/domain/*"],
+
+      "@use-case": ["src/use-cases/index"],
+      "@use-case/*": ["src/use-cases/*"],
+
+      "@presentation": ["./src/presentation/index"],
+      "@presentation/*": ["./src/presentation/*"],
+
+      "@infrastructure": ["./src/infrastructure/index"],
+      "@infrastructure/*": ["./src/infrastructure/*"]
+    },
+    "typeRoots": ["./node_modules/@types"],
+    "types": ["node", "jest"],
+    "resolveJsonModule": true,
+    "pretty": true,
+    "declaration": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "removeComments": true,
+    "noEmitOnError": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": false,
+    "strictPropertyInitialization": false,
+    "noFallthroughCasesInSwitch": true,
+    "allowUnusedLabels": true,
+    "allowUnreachableCode": false,
+    "skipLibCheck": true
+  }
+}
